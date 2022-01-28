@@ -1,0 +1,10 @@
+* {
+    font-family: sans-serif;
+}
+
+.t-t--u { text-transform: uppercase; }
+.t-t--c { text-transform: capitalize; }
+.t-t--l { text-transform: lowercase; }
+
+.ta-l { text-align: left }
+.ta-r { text-align: right }
