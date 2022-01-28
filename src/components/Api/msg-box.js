@@ -48,7 +48,7 @@ const renderBtn = (uiLabel, t, onClick, isDefaultBtn) => {
     backgroundColor: isDefaultBtn ? '#1271ff': '#e0e0e0',
     textColor: isDefaultBtn ? '#fff' : '#1f1f1f',
   }
-  return <button class="ml-2 mr-0" {...attrs} style="min-width: 100px" onClick={onClick}>{t(`buttons.${uiLabel}`)}</button>
+  return <button class="px-2 py-1" {...attrs} style="min-width: 100px" onClick={onClick}>{t(`buttons.${uiLabel}`)}</button>
 }
 
 const btnRenders = {
@@ -103,7 +103,7 @@ const render = () => {
           {typeof (msgData.value.content) === 'function' ? msgData.value.content() : msgData.value.content}
         </div>
       </div>
-      <div class="fr ai-c jc-fe px-2 py-2">
+      <div class="fr ai-c jc-fe fg-1 px-2 py-2">
         {btnRenders[msgData.value.btn](t, msgData.value.resultHandlerFn)}
       </div>
     </div>
