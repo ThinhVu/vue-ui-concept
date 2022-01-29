@@ -3,6 +3,7 @@ import Api from '@/components/Api/Api';
 import Icon from '@/components/Icon/Icon';
 import msgBox from '@/components/Api/msg-box';
 import dialog from '@/components/Api/dialog';
+import notification from '@/components/Api/notification';
 export default {
   name: 'App',
   components: {Api, Icon},
@@ -12,6 +13,7 @@ export default {
     const showDialog = async () => await dialog.show({component: { setup: () => () =>
        <div>Dialog content</div>
     } });
+    const showNotification = async () => await notification.err('Something bad happen!!!', 3000)
 
     return () => <div>
       <div>
@@ -31,6 +33,7 @@ export default {
 
       <button onClick={showMsgBox}>Show message box</button>
       <button onClick={showDialog}>Show dialog</button>
+      <button onClick={showNotification}>Show notification</button>
       <api/>
     </div>
 

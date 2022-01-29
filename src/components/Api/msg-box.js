@@ -44,11 +44,12 @@ const msgData = ref({
 });
 
 const renderBtn = (uiLabel, t, onClick, isDefaultBtn) => {
-  const attrs = {
+  const style = {
     backgroundColor: isDefaultBtn ? '#1271ff': '#e0e0e0',
-    textColor: isDefaultBtn ? '#fff' : '#1f1f1f',
+    color: isDefaultBtn ? '#fff' : '#1f1f1f',
+    minWidth: '100px',
   }
-  return <button class="px-2 py-1" {...attrs} style="min-width: 100px" onClick={onClick}>{t(`buttons.${uiLabel}`)}</button>
+  return <btn class="px-2 py-1" style={style} onClick={onClick}>{t(`buttons.${uiLabel}`)}</btn>
 }
 
 const btnRenders = {
