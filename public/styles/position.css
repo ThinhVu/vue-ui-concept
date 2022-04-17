@@ -1,8 +1,8 @@
-.abs { position: absolute }
-.fix { position: fixed }
-.rel { position: relative }
-.sta { position: static }
-.sti { position: sticky }
+.p-abs { position: absolute }
+.p-fixed { position: fixed }
+.p-rel { position: relative }
+.p-static { position: static }
+.p-sticky { position: sticky }
 
 .top-0 { top: 0 }
 .right-0 { right: 0 }

@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import useCssDirectives from './directives/css-directives';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+useCssDirectives(app);
+window.app = app;
+app.mount('#app');

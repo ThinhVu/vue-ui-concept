@@ -23,7 +23,7 @@
 /* align items */
 .ai-bl { align-items: baseline }
 .ai-c { align-items: center }
-.ai-f { align-items: flex-end }
+.ai-fe { align-items: flex-end }
 .ai-s { align-items: flex-start }
 
 /* justify content  */
@@ -38,8 +38,6 @@
 
 /* grid */
 .g { display: grid; }
-.gtc-1-1 { grid-template-columns: 1fr 1fr; }
-
 
 /*border-radius*/
 .br-1 { border-radius: 0.5em }
@@ -56,14 +54,13 @@
 .ovf-h { overflow: hidden }
 .ovf-x-s { overflow-x: scroll }
 .ovf-y-s { overflow-y: scroll }
-
-.hide-scroll-bar {
+.ovf-hsb {
+    /* Hide scrollbar*/
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hide-scroll-bar::-webkit-scrollbar {
+.ovf-hsb::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
     display: none;
 }
 
