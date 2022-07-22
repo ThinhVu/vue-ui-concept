@@ -29,7 +29,7 @@ const render = () => {
   const marginTop = i => ({marginTop: ((i * 60 + 10) + 'px')})
   return <>
     {Object.values(notifyState.value).map((notify, i) =>
-        <div class="fix fr top-0 right-0 ai-c jc-c px-2 py-2 br-1" style={[marginTop(i), {
+        <div class="p-fixed fr top-0 right-0 ai-c jc-c px-2 py-2 br-1" style={[marginTop(i), {
           marginRight: '10px',
           boxShadow: '0 2px 4px 0 rgba(0,0,0, 0.5)',
           backgroundColor: notify.color
