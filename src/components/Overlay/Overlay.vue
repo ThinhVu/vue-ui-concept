@@ -13,7 +13,7 @@ export default {
       }
     }
     return () => <div
-        class="w-100vw h-100vh fr ai-c fix top-0 left-0"
+        class="w-100vw h-100vh fr ai-c p-fixed top-0 left-0"
         style={{zIndex: props.zIndex}}
         onClick={handleOnClick}>
       {ctx.slots.default && ctx.slots.default()}

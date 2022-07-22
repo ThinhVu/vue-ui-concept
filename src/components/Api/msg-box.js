@@ -49,7 +49,7 @@ const renderBtn = (uiLabel, t, onClick, isDefaultBtn) => {
     color: isDefaultBtn ? '#fff' : '#1f1f1f',
     minWidth: '100px',
   }
-  return <btn class="px-2 py-1" style={style} onClick={onClick}>{t(`buttons.${uiLabel}`)}</btn>
+  return <btn class="px-2 py-1 ta-c" style={style} onClick={onClick}>{t(`buttons.${uiLabel}`)}</btn>
 }
 
 const btnRenders = {
@@ -87,14 +87,12 @@ const iconRenders = {
   [Icons.Question]: () => <icon class="mr-3">fas fa-question-circle:#757575</icon>,
 };
 
-const render = () => {
+const render = (t) => {
   if (!msgData.value.show)
     return
 
-  const t = v => v;
-
   return <overlay zIndex={msgData.value.zIndex}>
-    <div class="bc-gray-0 br-1 my-0 mx-a" style={{width: '70%', maxWidth: '500px'}}>
+    <div class="bc-gray-0 br-1 my-0 mx-a" style={{width: '70%', maxWidth: '500px', boxShadow: '0 2px 4px 0 rgba(0,0,0, 0.5)'}}>
       <div class="px-2 py-2" style="border-bottom: 1px solid #e0e0e0">
         <b>{msgData.value.title}</b>
       </div>
